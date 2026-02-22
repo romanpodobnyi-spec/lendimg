@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ксения Подобная — Как зарабатывать на закупках из Китая в 2026 году</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+
+            --color-bg: #E8E6E1;
+
+            --color-text: #1C1C1E;
+
+            --color-accent: #C41E3A;
+
+            --color-secondary: #4A7C8C;
+
+            --color-muted: #8E8E93;
+
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            overflow-x: hidden;
+        }
+        
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        
+        .hero-image {
+            background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 100%),
+                        url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80') center/cover;
+            filter: saturate(0.8) contrast(1.1);
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background: var(--color-text);
+            color: var(--color-bg);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--color-accent);
+            transition: left 0.3s ease;
+            z-index: 0;
+        }
+        
+        .btn-primary:hover::before {
+            left: 0;
+        }
+        
+        .btn-primary span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .platform-card {
+            background: rgba(255,255,255,0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .module-line {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            transition: stroke-dashoffset 2s ease;
+        }
+        
+        .module-line.visible {
+            stroke-dashoffset: 0;
+        }
+        
+        .bonus-card {
+            background: var(--color-accent);
+            color: white;
+        }
+        
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .text-reveal {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .text-reveal-inner {
+            transform: translateY(100%);
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .text-reveal.visible .text-reveal-inner {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="grain"></div>
+    
+    <nav class="fixed top-0 w-full z-40 px-6 py-4 text-white" style="mix-blend-mode: difference;">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="text-xl font-serif tracking-tight">Ксения Подобная</div>
+        <a
+            href="#contact"
+            aria-label="Перейти к форме записи"
+            class="text-sm uppercase tracking-widest hover:opacity-70 transition-opacity"
+        >
+            Записаться
+        </a>
+    </div>
+</nav>
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+</style>
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-labelledby="hero-title" aria-describedby="hero-description">
+  <!-- Фоновое изображение с прелоадером -->
+  <div class="absolute inset-0 bg-neutral-900"></div>
+  <div
+    class="absolute inset-0 hero-image bg-cover bg-center bg-no-repeat opacity-0 transition-opacity duration-1000"
+    style="background-image: url('path/to/optimized-image.jpg')"
+    onload="this.classList.remove('opacity-0')"
+  ></div>
+
+  <!-- Градиентная наложка -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+
+  <!-- Контент -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-24 md:py-32 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+    <div class="space-y-8 text-center md:text-left">
+      <!-- Подзаголовок -->
+      <p class="text-white/80 uppercase tracking-[0.2em] text-xs md:text-sm font-medium animate-fadeIn">
+        Практический курс по импорту
+      </p>
+
+      <!-- Заголовок -->
+      <h1 id="hero-title" class="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-tight font-bold animate-fadeInDelay">
+        Как стабильно зарабатывать
+        <br>
+        <span class="italic font-normal">на оптовых закупках</span>
+        <br>
+        из Китая
+        <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500 animate-gradient">в 2026 году</span>
+      </h1>
+
+      <!-- Описание -->
+      <p id="hero-description"
+                
+                <p class="text-xl text-white/80 max-w-lg leading-relaxed fade-up stagger-2">
+                    От нуля до первой успешной поставки за 4 недели. Практический курс для тех, кто готов начать свой бизнес с Китаем.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 fade-up stagger-3">
+                    <button onclick="scrollToSection('contact')" class="btn-primary px-8 py-4 rounded-full text-lg font-medium">
+                        <span>Начать обучение</span>
+                    </button>
+                    <button onclick="scrollToSection('program')" class="px-8 py-4 rounded-full border border-white/30 text-white hover:bg-white/10 transition-all">
+                        Смотреть программу
+                    </button>
+                </div>
+                
+                <div class="flex items-center gap-8 pt-8 fade-up stagger-4 text-white/60 text-sm">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        <span>4 недели</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="video" class="w-4 h-4"></i>
+                        <span>9 модулей</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="users" class="w-4 h-4"></i>
+                        <span>Онлайн-формат</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hidden md:block relative">
+                <div class="absolute -inset-4 bg-red-600/20 rounded-full blur-3xl float-animation"></div>
+                <div class="relative bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 float-animation" style="animation-delay: 1s;">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                                <i data-lucide="trending-up" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-white/60 text-sm">Средний доход студентов</p>
+                                <p class="text-white text-2xl font-serif">150 000 ₽/мес</p>
+                            </div>
+                        </div>
+                        <div class="h-px bg-white/20"></div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                                <i data-lucide="package" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-white/60 text-sm">Уже закупили товар</p>
+                                <p class="text-white text-2xl font-serif">500+ человек</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 scroll-indicator">
+            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+        </div>
+    </section>
+
+    <!-- For Whom Section -->
+    <section class="py-32 px-6 bg-[#E8E6E1]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 fade-up">
+                <p class="text-sm uppercase tracking-[0.2em] text-gray-500 mb-4">Для кого этот курс</p>
+                <h2 class="text-4xl md:text-5xl font-serif">Ваш путь начинается здесь</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group fade-up stagger-1">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80" 
+                             alt="Marketplace seller" 
+                             class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all"></div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-3">Продавцы маркетплейсов</h3>
+                    <p class="text-gray-600 leading-relaxed">Снизьте себестоимость товара и увеличьте прибыль, работая напрямую с производителями</p>
+                </div>
+                
+                <div class="group fade-up stagger-2">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" 
+                             alt="Entrepreneur" 
+                             class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all"></div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-3">Начинающие предприниматели</h3>
+                    <p class="text-gray-600 leading-relaxed">Запустите бизнес без своих товаров и складов, используя проверенные схемы</p>
+                </div>
+                
+                <div class="group fade-up stagger-3">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" 
+                             alt="Tired of middlemen" 
+                             class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all"></div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-3">Те, кто устал от посредников</h3>
+                    <p class="text-gray-600 leading-relaxed">Научитесь закупать товары напрямую и забудьте о переплатах навсегда</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="py-32 px-6 bg-[#F5F3F0]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 fade-up">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Что вы получите после курса</h2>
+                <p class="text-xl text-gray-600">Полная система работы с китайскими площадками</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-2xl card-hover fade-up stagger-1">
+                        <div class="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mb-6">
+                            <i data-lucide="search" class="w-6 h-6 text-gray-800"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Поиск поставщиков</h3>
+                        <p class="text-gray-600">Умение находить надёжных партнёров без переплаты и рисков</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl card-hover fade-up stagger-2">
+                        <div class="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mb-6">
+                            <i data-lucide="truck" class="w-6 h-6 text-gray-800"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Логистика и доставка</h3>
+                        <p class="text-gray-600">Знание, как дешево, безопасно и быстро доставлять товары в Россию</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl card-hover fade-up stagger-3">
+                        <div class="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mb-6">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-gray-800"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Контроль качества</h3>
+                        <p class="text-gray-600">Навык проверять товары и оптимизировать всю цепочку поставок</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl card-hover fade-up stagger-4">
+                        <div class="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mb-6">
+                            <i data-lucide="banknote" class="w-6 h-6 text-gray-800"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Схема заработка</h3>
+                        <p class="text-gray-600">Готовая система работы с 1688, Taobao, Pinduoduo и другими площадками</p>
+                    </div>
+                </div>
+                
+                <div class="bonus-card p-8 rounded-2xl flex flex-col justify-between fade-up stagger-4">
+                    <div>
+                        <h3 class="text-2xl font-serif mb-6">Бонусы курса</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                                <span>База проверенных поставщиков</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                                <span>Контакты карго-компаний</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                                <span>Шаблоны для переговоров</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                                <span>Инструкции по платежам</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                                <span>Чек-листы проверки товара</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-white/20">
+                        <p class="text-white/80 text-sm">Стоимость бонусов отдельно: <span class="line-through">15 000 ₽</span></p>
+                        <p class="text-2xl font-serif mt-2">Включены в курс</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section class="py-32 px-6 bg-[#E8E6E1] overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 fade-up">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Работа с реальными площадками</h2>
+                <p class="text-xl text-gray-600 max-w-2xl">Освойте все ключевые платформы для успешных закупок в Китае. Пошаговые инструкции по регистрации, оплате и работе с каждой площадкой.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="platform-card p-6 rounded-2xl card-hover fade-up stagger-1 group cursor-pointer">
+                    <div class="text-4xl font-bold text-gray-300 mb-4 group-hover:text-[#C41E3A] transition-colors">01</div>
+                    <h3 class="text-xl font-semibold mb-2">1688.com</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Оптовая платформа Alibaba для прямых закупок у производителей по самым низким ценам</p>
+                    <div class="mt-4 flex items-center text-sm font-medium text-gray-400 group-hover:text-gray-800 transition-colors">
+                        <span>Подробнее</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="platform-card p-6 rounded-2xl card-hover fade-up stagger-2 group cursor-pointer">
+                    <div class="text-4xl font-bold text-gray-300 mb-4 group-hover:text-[#C41E3A] transition-colors">02</div>
+                    <h3 class="text-xl font-semibold mb-2">Taobao & Pinduoduo</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Розничные площадки с огромным выбором товаров по лучшим ценам для перепродажи</p>
+                    <div class="mt-4 flex items-center text-sm font-medium text-gray-400 group-hover:text-gray-800 transition-colors">
+                        <span>Подробнее</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="platform-card p-6 rounded-2xl card-hover fade-up stagger-3 group cursor-pointer">
+                    <div class="text-4xl font-bold text-gray-300 mb-4 group-hover:text-[#C41E3A] transition-colors">03</div>
+                    <h3 class="text-xl font-semibold mb-2">Poizon & WeChat</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Премиум-товары и прямая связь с поставщиками через мессенджер</p>
+                    <div class="mt-4 flex items-center text-sm font-medium text-gray-400 group-hover:text-gray-800 transition-colors">
+                        <span>Подробнее</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="platform-card p-6 rounded-2xl card-hover fade-up stagger-4 group cursor-pointer">
+                    <div class="text-4xl font-bold text-gray-300 mb-4 group-hover:text-[#C41E3A] transition-colors">04</div>
+                    <h3 class="text-xl font-semibold mb-2">Alipay</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Настройка безопасных платежей и пополнение счета без комиссий</p>
+                    <div class="mt-4 flex items-center text-sm font-medium text-gray-400 group-hover:text-gray-800 transition-colors">
+                        <span>Подробнее</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Section -->
+    <section class="py-32 px-6 bg-[#1C1C1E] text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-10">
+            <svg viewBox="0 0 200 200" class="w-full h-full">
+                <path fill="currentColor" d="M45,-76C58.3,-69.3,69.1,-58.2,76.9,-45.3C84.7,-32.4,89.5,-17.7,88.3,-3.3C87.1,11.1,79.9,25.2,70.6,37.3C61.3,49.4,49.9,59.5,37.2,67.2C24.5,74.9,10.5,80.2,-2.8,84.6C-16.1,89,-28.7,92.5,-40.8,88.3C-52.9,84.1,-64.5,72.2,-73.6,59.1C-82.7,46,-89.3,31.7,-89.9,17.2C-90.5,2.7,-85.1,-12,-77.3,-25.3C-69.5,-38.6,-59.3,-50.5,-47.2,-58.3C-35.1,-66.1,-21.1,-69.8,-6.8,-58.8C7.5,-47.8,14.9,-21.1,31.7,-21.1" transform="translate(100 100)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-up">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm mb-8">
+                        <i data-lucide="star" class="w-4 h-4"></i>
+                        <span>Особенность курса</span>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-serif mb-6 leading-tight">Не теория,<br>а реальная практика</h2>
+                    <p class="text-xl text-gray-400 leading-relaxed mb-8">Каждый модуль содержит конкретные шаги, шаблоны, инструкции и чек-листы. Вы не просто узнаете теорию — вы сразу применяете знания на практике.</p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold mb-4 text-lg">Что включено</h4>
+                            <ul class="space-y-3 text-gray-400">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#C41E3A] flex-shrink-0 mt-0.5"></i>
+                                    <span>Пошаговые видео-инструкции</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#C41E3A] flex-shrink-0 mt-0.5"></i>
+                                    <span>Готовые шаблоны документов</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#C41E3A] flex-shrink-0 mt-0.5"></i>
+                                    <span>Таблицы расчёта прибыли</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#C41E3A] flex-shrink-0 mt-0.5"></i>
+                                    <span>PDF-гайды для скачивания</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4 text-lg">Поддержка</h4>
+                            <ul class="space-y-3 text-gray-400">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#C41E3A] flex-shrink-0 mt-0.5"></i>
+                                    <span>Личный куратор на связи</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#C41E3A] flex-shrink-0 mt-0.5"></i>
+                                    <span>Еженедельные разборы кейсов</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#C41E3A] flex-shrink-0 mt-0.5"></i>
+                                    <span>Ответы на все вопросы</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#C41E3A] flex-shrink-0 mt-0.5"></i>
+                                    <span>Обратная связь по заданиям</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative fade-up stagger-2">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" 
+                             alt="Practice" 
+                             class="w-full h-auto rounded-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-[#C41E3A] flex items-center justify-center">
+                                    <i data-lucide="play" class="w-5 h-5 text-white ml-1"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white font-medium">Смотреть пример урока</p>
+                                    <p class="text-white/60 text-sm">5 минут</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Structure -->
+    <section id="program" class="py-32 px-6 bg-[#E8E6E1]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 fade-up">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Структура курса: 9 модулей</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Последовательная система обучения, где каждый модуль логически дополняет предыдущий. От понимания экономики импорта до получения первой партии товара.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- SVG Line -->
+                <svg class="absolute left-1/2 top-0 h-full w-4 -translate-x-1/2 hidden lg:block" viewBox="0 0 4 800" preserveAspectRatio="none">
+                    <path d="M 2 0 L 2 800" stroke="#C41E3A" stroke-width="2" fill="none" class="module-line" id="moduleLine"/>
+                </svg>
+                
+                <div class="space-y-12 lg:space-y-24">
+                    <!-- Module 1 -->
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center fade-up">
+                        <div class="lg:text-right lg:pr-16 mb-8 lg:mb-0">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">01</div>
+                                <h3 class="text-2xl font-semibold mb-2">Экономика</h3>
+                                <p class="text-gray-600">Основы экономики импорта: расчёт себестоимости, маржинальность, налоги и пошлины</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block"></div>
+                    </div>
+                    
+                    <!-- Module 2 -->
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center fade-up">
+                        <div class="hidden lg:block"></div>
+                        <div class="lg:pl-16">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">02</div>
+                                <h3 class="text-2xl font-semibold mb-2">Импортная система</h3>
+                                <p class="text-gray-600">Процессы и документы: таможенное оформление, сертификация, необходимые бумаги</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Module 3 -->
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center fade-up">
+                        <div class="lg:text-right lg:pr-16 mb-8 lg:mb-0">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">03</div>
+                                <h3 class="text-2xl font-semibold mb-2">Поиск ниши</h3>
+                                <p class="text-gray-600">Оценка спроса и маржи: анализ рынка, выбор прибыльной ниши, тренды 2026</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block"></div>
+                    </div>
+                    
+                    <!-- Module 4 -->
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center fade-up">
+                        <div class="hidden lg:block"></div>
+                        <div class="lg:pl-16">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">04</div>
+                                <h3 class="text-2xl font-semibold mb-2">Поставщик и верификация</h3>
+                                <p class="text-gray-600">Поиск и проверка: как найти производителя, проверить надёжность, избежать мошенников</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Module 5 -->
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center fade-up">
+                        <div class="lg:text-right lg:pr-16 mb-8 lg:mb-0">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">05</div>
+                                <h3 class="text-2xl font-semibold mb-2">Логистика</h3>
+                                <p class="text-gray-600">Транспорт и хранение: виды доставки, карго-компании, складирование, отслеживание</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-16 fade-up">
+                    <button onclick="toggleModules()" id="showAllModules" class="inline-flex items-center gap-2 text-[#C41E3A] font-medium hover:gap-4 transition-all">
+                        <span>Показать все 9 модулей</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                
+                <div id="hiddenModules" class="hidden space-y-12 lg:space-y-24 mt-12">
+                    <!-- Modules 6-9 would go here with same pattern -->
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                        <div class="hidden lg:block"></div>
+                        <div class="lg:pl-16">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">06</div>
+                                <h3 class="text-2xl font-semibold mb-2">Переговоры</h3>
+                                <p class="text-gray-600">Коммуникация с китайцами: язык жестов, торг, построение долгосрочных отношений</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                        <div class="lg:text-right lg:pr-16">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">07</div>
+                                <h3 class="text-2xl font-semibold mb-2">Оплата</h3>
+                                <p class="text-gray-600">Безопасные платежи: Alipay, банковские переводы, защита сделок, возвраты</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block"></div>
+                    </div>
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                        <div class="hidden lg:block"></div>
+                        <div class="lg:pl-16">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">08</div>
+                                <h3 class="text-2xl font-semibold mb-2">Контроль качества</h3>
+                                <p class="text-gray-600">Проверка товара: фото-отчёты, инспекции, брак, возврат товара поставщику</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                        <div class="lg:text-right lg:pr-16">
+                            <div class="inline-block p-6 rounded-2xl bg-white shadow-sm">
+                                <div class="text-5xl font-serif text-[#C41E3A] mb-2">09</div>
+                                <h3 class="text-2xl font-semibold mb-2">Продажи</h3>
+                                <p class="text-gray-600">Выход на рынок: Авито, Ozon, Wildberries, собственный магазин, маркетинг</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-32 px-6 bg-[#F5F3F0]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-serif mb-8">Результаты после обучения</h2>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                        <div class="border-l-2 border-[#C41E3A] pl-6">
+                            <h4 class="font-semibold text-lg mb-2">Самостоятельный заказ</h4>
+                            <p class="text-gray-600">Вы сможете заказывать товары без посредников и переплат</p>
+                        </div>
+                        <div class="border-l-2 border-[#C41E3A] pl-6">
+                            <h4 class="font-semibold text-lg mb-2">Точный расчёт</h4>
+                            <p class="text-gray-600">Просчитаете все затраты и прибыль до копейки</p>
+                        </div>
+                        <div class="border-l-2 border-[#C41E3A] pl-6">
+                            <h4 class="font-semibold text-lg mb-2">Работа напрямую</h4>
+                            <p class="text-gray-600">Наладите прямые контакты с проверенными поставщиками</p>
+                        </div>
+                        <div class="border-l-2 border-[#C41E3A] pl-6">
+                            <h4 class="font-semibold text-lg mb-2">Первые продажи</h4>
+                            <p class="text-gray-600">Получите товар и начнёте зарабатывать на Авито, Ozon и других площадках</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative fade-up stagger-2">
+                    <div class="relative rounded-2xl overflow-hidden bg-gray-200 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" 
+                             alt="Success" 
+                             class="object-cover w-full h-full">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-[#C41E3A] text-white p-6 rounded-2xl shadow-xl">
+                        <p class="text-3xl font-serif mb-1">4 недели</p>
+                        <p class="text-white/80">до первой поставки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Guide Section -->
+    <section class="py-32 px-6 bg-[#4A7C8C] text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-up">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-sm mb-8">
+                        <i data-lucide="gift" class="w-4 h-4"></i>
+                        <span>Бонус</span>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-serif mb-6">Мини-гайд в подарок</h2>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                        <div class="text-6xl font-bold mb-2">10 товаров</div>
+                        <p class="text-xl mb-4">которые полетят в 2026 году</p>
+                        <p class="text-white/70">Эксклюзивная подборка перспективных ниш с высокой маржинальностью и растущим спросом</p>
+                    </div>
+                </div>
+                
+                <div class="fade-up stagger-2">
+                    <h3 class="text-2xl font-semibold mb-6">Что внутри гайда:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="trending-up" class="w-4 h-4"></i>
+                            </div>
+                            <span>Актуальные тренды рынка 2026</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="package" class="w-4 h-4"></i>
+                            </div>
+                            <span>Примеры успешных товаров</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="calculator" class="w-4 h-4"></i>
+                            </div>
+                            <span>Прогнозы спроса и прибыли</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="link" class="w-4 h-4"></i>
+                            </div>
+                            <span>Ссылки на поставщиков</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="megaphone" class="w-4 h-4"></i>
+                            </div>
+                            <span>Рекомендации по маркетингу</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-32 px-6 bg-[#1C1C1E] text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-[#C41E3A] rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#4A7C8C] rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-serif mb-6 fade-up">2026 год — время выгодных закупок</h2>
+            <p class="text-xl text-gray-400 mb-12 fade-up stagger-1">Начните умный бизнес с Китаем уже сегодня. Пройдите путь от новичка до уверенного импортёра всего за 4 недели.</p>
+            
+            <div class="grid grid-cols-3 gap-8 mb-12 fade-up stagger-2">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-[#C41E3A] mb-2">4</div>
+                    <div class="text-sm text-gray-400 uppercase tracking-wider">недели обучения</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-[#C41E3A] mb-2">9</div>
+                    <div class="text-sm text-gray-400 uppercase tracking-wider">модулей курса</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-[#C41E3A] mb-2">100%</div>
+                    <div class="text-sm text-gray-400 uppercase tracking-wider">онлайн формат</div>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/10 fade-up stagger-3">
+                <form class="space-y-6 text-left" onsubmit="handleSubmit(event)">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">Ваше имя</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-[#C41E3A] transition-colors" placeholder="Иван">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">Telegram или WhatsApp</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-[#C41E3A] transition-colors" placeholder="@username или +7...">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-2">Email</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-[#C41E3A] transition-colors" placeholder="example@mail.ru">
+                    </div>
+                    <button type="submit" class="w-full btn-primary py-4 rounded-xl text-lg font-medium">
+                        <span>Записаться на курс</span>
+                    </button>
+                    <p class="text-center text-sm text-gray-500">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-[#0f0f10] text-white border-t border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-2xl font-serif">Ксения Подобная</div>
+            <div class="flex gap-6 text-gray-400">
+                <a href="#" class="hover:text-white transition-colors">Telegram</a>
+                <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="hover:text-white transition-colors">YouTube</a>
+            </div>
+            <div class="text-gray-500 text-sm">© 2026 Все права защищены</div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animate module line if it's the module section
+                    if (entry.target.querySelector('.module-line')) {
+                        document.getElementById('moduleLine').classList.add('visible');
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        
+        // Smooth scroll
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Toggle modules
+        function toggleModules() {
+            const hidden = document.getElementById('hiddenModules');
+            const btn = document.getElementById('showAllModules');
+            
+            if (hidden.classList.contains('hidden')) {
+                hidden.classList.remove('hidden');
+                btn.innerHTML = '<span>Свернуть</span><i data-lucide="chevron-up" class="w-5 h-5"></i>';
+                lucide.createIcons();
+            } else {
+                hidden.classList.add('hidden');
+                btn.innerHTML = '<span>Показать все 9 модулей</span><i data-lucide="chevron-down" class="w-5 h-5"></i>';
+                lucide.createIcons();
+            }
+        }
+        
+        // Form submission
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<span>Отправка...</span>';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span>Заявка отправлена! ✓</span>';
+                btn.classList.remove('btn-primary');
+                btn.style.background = '#22c55e';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.add('btn-primary');
+                    btn.style.background = '';
+                    btn.disabled = false;
+                    e.target.reset();
+                }, 3000);
+            }, 1500);
+        }
+        
+        // Parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-image');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
